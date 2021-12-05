@@ -8,131 +8,26 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <title>Frontend Mentor | Single Price Grid Component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    /* ----------------- custom style code ------------- */
-      *{
-    
-        box-sizing: border-box;
-      }
-      body{
-          font-family: 'Karla', sans-serif;
-          font-size: 16px;
-    } 
-      main{
-        width: 50vw;
-        position: relative;
-        margin: 50px auto;
-        display: flex;
-        flex-direction: column;
-        box-shadow: 0px 0px 2px hsl(204, 43%, 93%),0px 0px 5px hsl(204, 43%, 93%),0px 0px 10px hsl(204, 43%, 93%);
-      }
-
-      .grid{
-        padding: 30px 50px;
-      }
-
-      .grid > p{
-        color: hsl(204, 0%, 64%);
-      }
-
-      .grid > p, .info-component{
-        font-size: 16px;
-      }
-    
-      h1{
-        color:  hsl(179, 62%, 43%);
-        font-size: x-large;
-      }
-    
-      h2{
-        color: hsl(71, 73%, 54%);
-        font-size: larger;
-    }
-      .components-all{
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .component{
-        flex: 1;
-        padding:30px 30px 30px 50px;
-        color: #fff;
-        background-color: hsl(179, 62%, 43%);
-      }
-     
-      .info-component{
-       background-color: hsla(179, 62%, 43%, 0.8);
-      }
-
-
-      .price-component .price{
-        display: flex;
-        color: hsl(204, 43%, 93%);
-        align-items: center;    
-      }
-      .price-component .price span{
-        font-size: 2em;
-        font-weight: bold;
-        margin-right: 10px;
-        color: #fff;
-      }
-
-      .price-component .signup-btn{
-        display: block;
-        margin-top: 30px;
-        text-align: center;
-        padding: 10px;
-        text-decoration: none;
-        color: white;
-        background-color: hsl(71, 73%, 54%);
-        font-weight: bold;
-        border-radius: 5px;
-      }
-     
-      .info-component ul{
-        padding: 0;
-      }
-
-      .info-component ul li{
-        color: hsl(204, 43%, 93%);
-        list-style-type: none;
-        font-size: 0.9em;
-      }
-      @media only screen and (max-width: 824px){
-        
-        .container{
-          width: 80vw;
-        }
-        .components-all{
-          flex-direction: column;
-        }
-
-      }
-
-
-    /* --------- custom code ends --------*/
-
+  <style>     
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
   <main>
-    <section class="grid">
-    
+    <div class="padding primary-component">
     <h1>Join our community</h1>
-
-    <h2>30-day, hassle-free money back guarantee</h2>
-
-   <p> Gain access to our full library of tutorials along with expert code reviews.
-   Perfect for any developers who are serious about honing their skills.</p>
-    </section>
-    <div class="components-all">
-      <section class="component price-component">
-        <h3>Monthly Subscription</h3>
-
+    <p>30-day, hassle-free money back guarantee</p>
+    <p> Gain access to our full library of tutorials along with expert code reviews. 
+    Perfect for any developers who are serious about honing their skills.</p>
+    </div>
+    
+    <div class="secondary-components">
+     
+      <div class="padding component price-component">
+        <h2>Monthly Subscription</h2>
         <p class="price">
           <span>&dollar;29</span>per month
         </p>
@@ -140,10 +35,10 @@
         <p>Full access for less than &dollar;1 a day</p>
 
         <a href="#" class="signup-btn"> Sign Up</a>
-      </section>
-      <section class="component info-component">
-
-      <h4>Why Us</h4>
+      </div>
+     
+      <div class="padding component info-component">
+      <h2>Why Us</h2>
       <ul>
           <li>Tutorials by industry experts</li>
           <li>Peer &amp; expert code review</li>
@@ -153,10 +48,9 @@
           <li>Flashcard decks</li>
           <li>New videos every week</li>
       </ul>
-    </section>  
+    </div>  
   </div>
 </main>
-  
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
