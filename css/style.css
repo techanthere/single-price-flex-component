@@ -8,14 +8,14 @@
         font-family: 'Karla', sans-serif;
         min-height: 100vh;
         padding: 1.5rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
         background-color: hsl(204, 43%, 93%);
+        display: grid;
+        align-items: center;
+        justify-items: center;
       }
      
       main{
+        display: grid;
         background-color: #fff;
         max-width: 40rem;
         box-shadow: 0px 0px 2px hsl(204, 43%, 93%),0px 0px 5px hsl(204, 43%, 93%),0px 0px 10px hsl(204, 43%, 93%);
@@ -27,6 +27,9 @@
 
       h1, h2{
         margin-bottom: 0.9rem;
+      }
+      .component{
+        color: #fff;
       }
 
       .primary-component p:first-of-type{
@@ -78,6 +81,7 @@
         width: 100%;
       }
 
+
       h1{
         color:  hsl(179, 62%, 43%);
         font-size: 1.5rem;
@@ -92,7 +96,18 @@
       }
 
       @media (min-width: 700px) {
-        .secondary-components{
-          display: flex;
+        main{
+          grid-template-areas: 
+          "primary primary"
+          "price description";
+        }
+        .primary-component{
+          grid-area: primary;
+        }
+        .price-component{
+          grid-area: price;
+        }
+        .info-component{
+          grid-area: description;
         }
       }
